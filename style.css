@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #212224;
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+    --img-url: url(Alan.png);
+  }
+  
+  .smoothcontainer {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+  }
+  
+  .navbar ul li a:hover {
+    color: skyblue;
+  }
+  
+  section.half {
+    padding-top: 50%;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
+  }
+  section.half {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+   
+    /* Scroll Snap */
+    scroll-snap-align: center;
+  }
+  
+  section h1 {
+    font-size: 4rem;
+  }
+  
+  /* Dvoj typ sectionu */
+
+/* section:nth-of-type(2){
+    background-color: white;
+    color: black;
+}  */
+  
+/* ABOUT ME PAGE =========================================================================================================*/
+#leftSide{
+    margin-top: 10%;
+}
+#rightSide{
+    margin-top: 8%;
+    padding-left: 10%;
+    text-align: center;
+}
+#aboutme{
+    height: max-content;
+}
+#name{
+    font-size: 5rem;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 15px;
+}
+#hello{
+    font-family: 'PT Sans', sans-serif;
+}
+.headshot {
+	flex-shrink: 0;
+	margin: 20px;
+	height: calc(230px + 6vw);
+	width: calc(230px + 6vw);
+	border: calc(8px + 0.2vw) solid transparent;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.headshot-2 {
+	border-radius: 50%;
+	background-image: var(--img-url), linear-gradient(to bottom right, #ffeb3c, #b6da19, #d38612);
+}
+/* HOME PAGE =========================================================================================================*/
+
+#leftSide2{
+    
+    float: right;
+}
+#rightSide2{
+    
+    font-family: 'Cardo', serif;
+}
+#text{
+    margin-top: 40px;
+    width: 80%;
+    font-size: 20px;
+}
+
+
+/* SKILLS PAGE =========================================================================================================*/
+.progress_text{
+  padding-right: 75%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 25px;
+  margin: 0;
+  margin-top: 5px;
+}
+.progress-bar{
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+.progress-h{
+  font-family: 'Spartan', sans-serif;
+}
+.progress {
+  background-color: #0e0e0f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.progress-bar-orange {
+  background-color: rgb(216, 140, 25) !important;
+}
+/* WORK & EDUCATION =========================================================================================================*/
+.university-h{
+  
+  font-family: 'Spartan', sans-serif;
+  color:rgb(216, 140, 25)  ;
+  
+}
+.university{
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #0e0e0f;
+  border-radius: 5px;
+  font-family: 'Spartan', sans-serif;
+}
+
+
+/* Foooter  =========================================================================================================*/
+
+.footer-basic {
+    padding:40px 0;
+    background-color: #0e0e0f;
+    color: white;
+    border: white;
+    border-top: solid;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+  .bottomMenu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #000;
+    background: red;
+    z-index: 1;
+}
+
+.cardo{
+  color:rgba(248, 244, 244, 0.904);
+  font-family: 'Open Sans', sans-serif;
+  /* border-top: solid;
+  border-width: 1px;
+  border-color: rgb(216, 140, 25); */
+  font-size: 16px;
+}
+.spartan{
+  
+  font-family: 'Spartan', sans-serif;
+}
