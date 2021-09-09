@@ -45,7 +45,7 @@
   
   .navbar ul li {
     margin: 0 1rem;
-    padding: 1rem;
+    margin-top: 0.5rem;
   }
   
   .navbar ul li a {
@@ -273,4 +273,28 @@
 .spartan{
   
   font-family: 'Spartan', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  li.nav {
+    width: 12%;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 75%;
+    justify-content: center;
+   
+}
+  .mobile{
+    display: none !important;
+  }
+  .about{
+    padding-top: 0 !important;
+  }
+  #text{
+    width: auto;
+  }
 }
